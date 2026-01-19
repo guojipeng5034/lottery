@@ -1,0 +1,209 @@
+.element-card {
+    cursor: default;
+    text-align: center;
+    user-select: none;
+    .card-id {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        z-index: 2;
+    }
+
+    .card-name {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        overflow: visible;
+        z-index: 2;
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 5%;
+
+        .card-name-text {
+            white-space: normal;
+            word-wrap: break-word;
+            word-break: break-word;
+            overflow-wrap: break-word;
+            text-align: center;
+            max-width: 100%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+
+    .card-avatar-name{
+        top: auto;
+        bottom: 0;
+        left: 0px;
+        right: 0;
+        transform: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+        
+        .card-name-english {
+            font-size: inherit;
+            line-height: 1.2;
+            white-space: normal;
+            word-wrap: break-word;
+            word-break: break-word;
+            overflow-wrap: break-word;
+            overflow: visible;
+            text-overflow: clip;
+            max-width: 100%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        .card-name-chinese {
+            font-size: inherit;
+            line-height: 1.2;
+            white-space: normal;
+            word-wrap: break-word;
+            word-break: break-word;
+            overflow-wrap: break-word;
+            overflow: visible;
+            text-overflow: clip;
+            max-width: 100%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+
+    .card-detail {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 15px;
+        z-index: 2;
+    }
+
+    .card-avatar{
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+}
+
+.lucky-element-card {
+    cursor: default;
+    &::before {
+        background-color: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+        border: 1px solid linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+    }
+    border-radius: 10px;
+    .card-id {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 2;
+    }
+
+    .card-name {
+        text-align: center;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        overflow: visible;
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 5%;
+        // -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+        // animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+        // animation-delay: 0.6s;
+
+        .card-name-text {
+            white-space: normal;
+            word-wrap: break-word;
+            word-break: break-word;
+            overflow-wrap: break-word;
+            text-align: center;
+            max-width: 100%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+    .card-avatar-name{
+        top: auto;
+        bottom: 0;
+        left: 0px;
+        right: 0;
+        transform: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+        
+        .card-name-english {
+            font-size: inherit;
+            line-height: 1.2;
+            white-space: normal;
+            word-wrap: break-word;
+            word-break: break-word;
+            overflow-wrap: break-word;
+            overflow: visible;
+            text-overflow: clip;
+            max-width: 100%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        .card-name-chinese {
+            font-size: inherit;
+            line-height: 1.2;
+            white-space: normal;
+            word-wrap: break-word;
+            word-break: break-word;
+            overflow-wrap: break-word;
+            overflow: visible;
+            text-overflow: clip;
+            max-width: 100%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+
+    .card-detail {
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 2;
+        bottom: 15px;
+    }
+
+    .card-avatar{
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        // 头像大小会根据卡片大小动态调整，这里不设置固定尺寸
+        object-fit: cover;
+        border-radius: 8px;
+    }
+}
